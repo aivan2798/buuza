@@ -1,0 +1,115 @@
+package com.zenjiai;
+//xtra functions to be used
+import ai.expert.nlapi.v2.model.AnalyzeDocument;
+import java.io.*;
+import com.zenjiai.Imprints.Analysis;
+
+public class Utilcortex
+{
+  
+  //serialize nlp parsing result
+public byte[] makeSerial(Analysis ripe)
+{
+  //big help from https://stackoverflow.com/questions/2836646/java-serializable-object-to-byte-array
+ 
+  byte[] raw_data;
+ ByteArrayOutputStream ripe_nerve= new ByteArrayOutputStream();
+ObjectOutputStream raw_nerve = null;
+try {
+  raw_nerve = new ObjectOutputStream(ripe_nerve);   
+  raw_nerve.writeObject(ripe);
+  raw_nerve.flush();
+  raw_data = ripe_nerve.toByteArray();
+  }
+  catch(IOException ex)
+  {
+   return null;
+  }
+  
+return raw_data;
+}
+  
+  //big help from https://stackoverflow.com/questions/2836646/java-serializable-object-to-byte-array
+public Analysis processSerial(byte raw_data[])
+{//deserialize nlp result
+   Object ripe_data =null;
+   ByteArrayInputStream raw_nerve = new ByteArrayInputStream(raw_data);
+  ObjectInputStream ripe_nerve = null;
+  try
+  {
+  ripe_nerve = new ObjectInputStream(raw_nerve);
+  try
+  {
+  ripe_data = ripe_nerve.readObject();
+  }
+  catch(ClassNotFoundException ex)
+  {
+    
+  }
+  }
+  catch(IOException ex)
+  {
+   return null;
+  }
+  
+  
+  return (Analysis)ripe_data; 
+}
+
+public void mkJSON()
+{
+  
+}
+
+public byte[] serialMan(Serializable obb)
+{
+ 
+ 
+ ByteArrayOutputStream bos= new ByteArrayOutputStream();
+ ObjectOutputStream output;
+ 
+ 
+ 
+   try
+   {
+    output=new ObjectOutputStream(bos);
+    output.writeObject(tm);
+    
+   }
+   catch(IOException io)
+   {
+     
+   }
+   
+   return bos.toByteArray();
+}
+
+public Object unserialMan(byte ab[])
+{
+   ByteArrayInputStream bis;
+  ObjectInputStream input;
+   Object pawn=null;
+   try
+   {
+   bis=new ByteArrayInputStream(serialMan(tm));
+    input=new ObjectInputStream(bis);
+   try
+   {
+    pawn=input.readObject();
+   }
+    catch(ClassNotFoundException cnf)
+    {
+      
+    }
+   }
+   catch(IOException io)
+   {
+     
+   }
+   
+   return pawn;
+}
+
+
+  
+}

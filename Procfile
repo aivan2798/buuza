@@ -1,0 +1,1 @@
+web: java -jar target/buuza-1.0.jar

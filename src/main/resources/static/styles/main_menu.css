@@ -1,0 +1,22 @@
+#mainmenu
+{
+ position:fixed;
+ left:0px;
+ top:2.5em;
+ background-color:#4F32F2;
+ width:50vw;
+ font-weight:bold;
+ height:50vh;
+ color:white;
+ display:none;
+ overflow-y:scroll;
+ border-bottom:2px solid black;
+}
+
+#index_list
+{
+ 
+ overflow-y:scroll;
+ background-color:white;
+ border-bottom:2px solid green;
+}

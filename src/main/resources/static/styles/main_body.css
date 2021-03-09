@@ -1,0 +1,65 @@
+#ctrls
+{
+ /*padding-top:1%;
+ padding-bottom:1%;*/
+ background-color:#4F32F2;
+ width:inherit;
+}
+
+#footer
+{
+ padding-top:1%;
+ padding-bottom:2%;
+ background-color:#4F32F2;
+ /*position:absolute;*/
+ color:white;
+ width:99vw;
+ bottom:1px;;
+}
+
+#dropper
+{
+/*margin-left:0%;
+width:10%;
+right:0%;
+margin-top:0%;
+position:absolute;*/
+}
+
+#txt_view
+{
+ color:white;
+ width:99vw;
+ display:block;
+ background-color:black;
+ height:77vh;
+ overflow-y:scroll;
+ border:2px solid green;
+}
+
+#menu_div
+{
+position:fixed;
+ top:0%;
+ padding:0px;
+ right:0%;
+ width:25%;
+ background-color:white;
+}
+
+
+#mini
+{
+ position:fixed;
+ top:0%;
+ padding:0px;
+ right:25%;
+ width:8%;
+ height:4%;
+ 
+}
+
+#b2
+{
+ 
+}

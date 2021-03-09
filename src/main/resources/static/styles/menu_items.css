@@ -1,0 +1,20 @@
+#txt_dev_title
+{
+ margin-top:0px;
+ position:absolute;
+}
+
+#txt_div_close
+{
+  width:10%;
+  height:10%;
+  position:absolute;
+  right:0px;
+}
+
+#txt_div_header
+{
+ 
+ margin-bottom:5%;
+ font-size:inherit;
+}

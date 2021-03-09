@@ -1,0 +1,96 @@
+<html>
+  
+<head>
+<link rel="stylesheet" type="text/css" href="/styles/mau.css"/>
+</link>
+<link rel="stylesheet" type="text/css" href="/styles/main_body.css"/>
+</link>
+
+ <link rel="stylesheet" type="text/css" href="/styles/add_menu.css"/>
+ <link rel="stylesheet" type="text/css" href="/styles/menu_items.css"/>
+  <link rel="stylesheet" type="text/css" href="/styles/main_menu.css"/>
+<script src="/scripts/Imprints.js"></script>
+ <script src="/scripts/addMenuFx.js"></script>
+<script src="/scripts/genesis.js"></script>
+<script src="/scripts/ctrl.js"></script>
+<script src="/scripts/utilFx.js"></script>
+<script src="/scripts/menuCtrl.js"></script>
+ 
+  </head>
+  <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+
+  <body id="heada" bgcolor="black" onload="genesis()">
+   <table id="theaders" width="100%" height="5%">
+    
+   
+  
+    <tr id="div_heada">
+  <!--img id="menu_icon" src="/res/menu.png"  onClick="mains()"/!-->
+  <td width="20%">
+  <button id="menu_icon" onClick="mains()">MENU</button>
+  </td>
+  <!--td>
+  <div id="sum_div">
+  <input id="sum_txt" type="text" placeholder="summary topic"/>
+  <br/>
+  <button id="sum_mk">CREATE</button>
+  </div>
+  </td>
+  <!--button id="ind_mk">GENERATE INDEX</button!-->
+  <td width="60%">
+  <!--div id="ask_div"-->
+  <input id="ask_txt" type="text" placeholder="ASK ME"/>
+  
+  <button id="ask_mk" class="tooldivs" onClick="askit()">ASK</button>
+  <!--/div-->
+  </td>
+  <!--img id="add_icon" src="/res/add.png" onClick="menu()"-->
+   <td width="20%">
+     
+       <button id="dropper" onclick="showCtrls()">HIDE ANSWERS</button> 
+   </td>
+   
+  </tr>
+   </table>
+   <div id="ctrls">
+      ANSWERS
+  <!--button class="tooldivs" id="more_mk">ADDITIONAL FX</button!-->
+  
+   </div>
+   
+
+    <!--img id="dropper" src="/res/dup.png" onclick="showCtrls()"/-->
+    
+  <div id="txt_view">
+  text  
+  </div>
+  
+ <div id="footer" onClick="ring()">
+  logs
+ </div>
+ 
+ <div id="mainmenu">
+    <!--div id="head">MENU</div!-->
+   
+   
+   <div id="add_user" class="selector" onclick="addUser()">o Create User</div>
+      <div id="add_file" class="selector" onclick="menu()">o Add File</div>
+   <div id="gen_index" class="selector" onclick="genInd()">oShow Index</div>
+   
+      <div id="index_list">
+     
+   </div>
+   <div id="pick_file" class="selector" onclick="getUserFiles()">
+    o File List
+   </div>
+   
+   <div id="files_list">
+     
+   </div>
+</div>
+ 
+ 
+  </body>
+  
+  
+</html>
