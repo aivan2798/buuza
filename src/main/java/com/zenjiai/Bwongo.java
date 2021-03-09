@@ -7,6 +7,7 @@ import com.google.common.collect.*;
 
 public class Bwongo
 {
+
  LinkedHashMap<String,Table<Long,Long,String>> data_map=new LinkedHashMap<>();
  LinkedHashMap<String,Table<Long,Long,String>> qn_map=new LinkedHashMap<>();
  BiMap<Long,String> qtoken_ids=HashBiMap.create();
