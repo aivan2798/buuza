@@ -7,7 +7,8 @@ will have support for pdf docs.
 #buuza features include:-|
 -------------------------|
 
-->answers what/who questions that uses mean't to extract
+->answers what/who questions.
+it's purpose is to extract
 specific info/data 4rm the loaded doc.
 
 ->auto index/appendix generator.
